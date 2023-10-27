@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_HUB_REPO = 'tunombredeusuario/tunombredeimagen'
+        DOCKER_HUB_REPO = 'SantinoTona/webserver'
         IMAGE_VERSION = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
         CONTAINER_NAME = 'mi_contenedor'
         NGINX_PORT = 8080
